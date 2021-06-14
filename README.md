@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+# sqltest-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+The front-end of this application is built on React js deployed on AWS amplify and server side built on Java 8 ,spring boot REST apis deployed on AWS Elastic Beanstalk using Docker image.AWS API Gateway is used to proxying the request to Beanstalk. Database used is postgres 12 hosted on AWS RDS. Spring JDBC is used for all database operations. Application handles functional and non-functional requirements along with error scenarios. API documentation is available on swagger. To test this application use endpoint https://master.d3v0lrha6df598.amplifyapp.com
 
 In the project directory, you can run:
 
