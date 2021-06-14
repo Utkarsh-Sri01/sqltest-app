@@ -1,21 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +11,73 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.login-container {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.email-label {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.table-container {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 1%;
+}
+.table-schema-label {
+  text-align: left;
+  margin-left: 1%;
+}
+
+.column-table {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.question-label {
+  padding: 10px;
+  width: 80%;
+}
+
+.question-heading {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.text-area {
+  width: 80%;
+  height: 15vh;
+  margin-left: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.button-styled {
+  margin: 8px;
+  height: 30px;
+}
+
+.error-message {
+  font-weight: bold;
+  padding: 10px;
+  color: red;
+}
+
+.success-message {
+  font-weight: bold;
+  padding: 10px;
+  color: green;
 }
 
 @keyframes App-logo-spin {
