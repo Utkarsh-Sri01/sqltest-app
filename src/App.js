@@ -1,7 +1,7 @@
 import "./App.css";
 import Login from "./Login";
 export const API_BASE_URL =
-  "http://sqltestservice-env.eba-c4ah2ern.ap-southeast-2.elasticbeanstalk.com";
+  "https://l87e0hu0il.execute-api.ap-southeast-2.amazonaws.com/sqlTest";
 function App() {
   return (
     <div className="App">
