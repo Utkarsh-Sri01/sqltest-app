@@ -162,11 +162,11 @@ function HomePage({ email }) {
         <div className="button-container">
                    
           <button
-            disabled={query ? false : true}
+            disabled={(query ? false : true) || submitStatus.isError === false}
             className="button-styled"
             onClick={executeQuery}
           >
-                        Execute Query          
+                        Execute          
           </button>
                    
           <button
