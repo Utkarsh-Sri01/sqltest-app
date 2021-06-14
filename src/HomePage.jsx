@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { API_BASE_URL } from "./App";
 
 function HomePage({ email }) {
   const [tableData, setTableData] = useState(null);
@@ -10,7 +11,7 @@ function HomePage({ email }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let response = await axios.post("http://localhost:8080/submitTest", {
+      let response = await axios.post(API_BASE_URL + "/submitTest", {
         query: query,
         userEmailId: email,
       });
@@ -23,7 +24,7 @@ function HomePage({ email }) {
   const executeQuery = async (e) => {
     e.preventDefault();
     try {
-      let response = await axios.post("http://localhost:8080/executeQuery", {
+      let response = await axios.post(API_BASE_URL + "/executeQuery", {
         query,
       });
       setQueryResult({
@@ -44,7 +45,7 @@ function HomePage({ email }) {
   useEffect(() => {
     async function fetchTableData() {
       try {
-        let response = await axios.get("http://localhost:8080/startTest");
+        let response = await axios.get(API_BASE_URL + "/startTest");
         setTableData(response.data);
       } catch (error) {
         console.log(error);

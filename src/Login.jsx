@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import HomePage from "./HomePage";
 import "./App.css";
+import { API_BASE_URL } from "./App";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/", {
+      const response = await axios.post(API_BASE_URL + "/createUser", {
         emailId: email,
       });
       setView("home");
