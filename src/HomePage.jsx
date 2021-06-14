@@ -97,7 +97,7 @@ function HomePage({ email }) {
           type="email"
           value={query}
           className="text-area"
-          placeholder="Type your query"
+          placeholder="Type your sql query"
           onChange={({ target }) => setQuery(target.value)}
         />
                
@@ -171,7 +171,7 @@ function HomePage({ email }) {
                    
           <button
             className="button-styled"
-            disabled={query ? false : true}
+            disabled={(query ? false : true) || submitStatus.isError === false}
             type="button"
             onClick={handleSubmit}
           >
